@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkblue; 
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    
+}
+h1{
+    color: yellow;
+    margin-left: 2%;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-in-out 2.3s;
+}
+nav{
+    display: flex;
+    gap: 40px;
+}
+.icon{
+    margin-top: 1.7%;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    margin: 0;
+}
+
+
+.background-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Send the video behind the content */
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 6%;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hover-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hover-button:hover {
+  background-color: red;
+  padding: 10px 20px;
+}
+
+/* About Us Page Styling */
+.about-us-page {
+  height: 100vh; /* Full screen height */
+  background-image: url('/pic2.png'); /* Add your image in the public folder */
+  background-size: cover; /* Cover entire background */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for better readability */
+  padding: 80px 10px;
+  border-radius: 10px;
+}
+
+.content h1{
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white; 
+}
+.yellow{
+  color: yellow;
+}
+
+.paragraph {
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+  margin-top: -1%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20%;
+  margin-top: 5%;
+}
+
+/* Heading Style */
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 20px;
+
+}
+
+/* Cards Grid Layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Individual Card Style */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Image Style */
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Card Content Style */
+.card-content h2 {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #666;
+}
+button{
+  background-color: black;
+  color: white;
+  padding: 10px 5px;
+  margin-top: 5%;
+  border-radius: 8%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  border-color: white;
+  padding: 10px 5px;
+}
+.cost{
+  color: darkblue;
+  font-weight: bold;
+}
+.contact-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 25%;
+  height: 80vh;
+  width: 50%;
+  max-width: 100;
+  padding: 20px;
+  background-color: rgb(169, 191, 199);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Form section */
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input[type="text"],
+.form-input[type="email"],
+.form-input[type="tel"] {
+  height: 40px;
+}
+
+.form-textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Submit button styling */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width:768px){
+  .head{
+    flex-direction: column;
+    text-align: center;
+  }
+  nav{
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .contact-container{
+    width: 80%;
+    margin-left: 12%;
+  }
+  .icon{
+    margin-left: 40%;
+  }
+  .cards {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px;
+  }
+
+  .card {
+    margin: 0 auto; /* Center-align cards */
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+
+/* Individual Card Style */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Image Style */
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Card Content Style */
+.card-content h2 {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Button Style */
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Price Styling */
+.cost {
+  color: darkblue;
+  font-weight: bold;
+}
+
+}
